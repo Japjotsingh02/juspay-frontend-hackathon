@@ -107,7 +107,7 @@ export default function MenuDrawer() {
                 shadow-lg
                 max-h-[85vh] overflow-y-auto
                 scrollbar-hide
-                p-4
+                p-4 pb-6
                 m-4
                 flex flex-col
               "

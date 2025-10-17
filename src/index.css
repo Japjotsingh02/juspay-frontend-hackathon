@@ -10,11 +10,6 @@
   display: none;
 }
 
-.scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -31,4 +26,19 @@
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
   border-radius: 0.375rem;
+}
+
+[data-vaul-drawer]::after {
+  content: none !important;
+  display: none !important;
+}
+
+[data-vaul-drawer]:not([data-vaul-custom-container="true"])::after {
+  content: none !important;
+  display: none !important;
+}
+
+[data-vaul-drawer][data-vaul-drawer-direction="bottom"]::after {
+  content: none !important;
+  display: none !important;
 }
